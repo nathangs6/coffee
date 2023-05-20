@@ -1,0 +1,43 @@
+html {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+body {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.heading {
+    margin: 0 auto 0 auto;
+}
+
+#ratio-div {
+    margin-bottom: 1em;
+}
+
+.outputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.output-section {
+    margin: auto;
+}
+
+.number-input {
+    width: 5em;
+    background-color: #282828;
+    color: #ebdbb2;
+    outline: none;
+    border: solid 1px #a89984;
+}
+
+.error-message {
+    display: none;
+    margin: auto;
+}

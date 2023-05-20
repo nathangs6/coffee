@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Coffee Ratios</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Compute your coffee ratios here">
+        <meta name="author" content="Nathan Gurrin-Smith">
+        <meta name="keywords" content="coffee,ratios">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="coffee.css">
+        <script src="coffeeRatios.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="heading">Coffee Ratios</h1>
+            <hr>
+        </header>
+        <main>
+            <div id="ratio-div">
+                <label>Desired ratio</label><br/>
+                <input id="ratio-input" class="number-input" type="number" value="65" onkeydown="forceNumber(event)" oninput="handleRatioChange(event)"/> g/L<br/>
+            </div>
+            <div class="outputs">
+                <div class="output-section">
+                    <label>Coffee Mass</label>
+                    <br/>
+                    <input id="coffee-input" class="number-input" type="number" min=1 value="10" onkeydown="forceNumber(event)" oninput="handleCoffeeChange(event)"/> g
+                </div>
+                <div class="output-section">
+                    <label>Water Volume</label>
+                    <br/>
+                    <input id="water-input" class="number-input" type="number" min=1 value="153.85" onkeydown="forceNumber(event)" oninput="handleWaterChange(event)"/> mL
+                </div>
+            </div>
+            <p class="error-message">Please enter a number!</p>
+        </main>
+        <footer>
+            <hr/>
+            <p>Author: Nathan Gurrin-Smith</p>
+        </footer>
+    </body>
+
